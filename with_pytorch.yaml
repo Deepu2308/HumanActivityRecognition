@@ -1,0 +1,9 @@
+name: with_pytorch
+dependencies:
+- python= 3.8.3
+- pip:
+  - pandas
+  - tensorboard  
+  - pyglet
+  - tensorforce
+  - torch
