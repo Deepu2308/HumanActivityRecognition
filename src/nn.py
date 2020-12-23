@@ -65,16 +65,20 @@ class Net(nn.Module):
         return x
     
 
-    
+
 network = Net()
+network.cuda()
+print("GPU available?: ", torch.cuda.is_available())
+print("Network using cuda?:", next(network.parameters()).is_cuda)
+
 optimizer = optim.SGD(network.parameters(), lr=learning_rate,
                       momentum=momentum)
 criterion = nn.CrossEntropyLoss()
 
-Xtrain = torch.load('input/Xtrain.pt').float()
-Xtest  = torch.load('input/Xtest.pt').float()
-ytrain = torch.load('input/ytrain.pt')
-ytest  = torch.load('input/ytest.pt')
+Xtrain = torch.load('input/Xtrain.pt').float().cuda()
+Xtest  = torch.load('input/Xtest.pt').float().cuda()
+ytrain = torch.load('input/ytrain.pt').cuda()
+ytest  = torch.load('input/ytest.pt').cuda()
 
 indices = np.array(range(Xtrain.shape[0]))
 n_mini_batch = 10 
@@ -85,10 +89,10 @@ for epoch in range(5000):  # loop over the dataset multiple times
     kf.get_n_splits(indices)
     
     train_loss = 0.0
-    for i in kf.split(indices, y = ytrain):
+    for i in kf.split(indices, y = ytrain.cpu()):
         # get the inputs; data is a list of [inputs, labels]
         inputs, labels = Xtrain[i[1]], ytrain[i[1]]
-
+            
         # zero the parameter gradients
         optimizer.zero_grad()
 
