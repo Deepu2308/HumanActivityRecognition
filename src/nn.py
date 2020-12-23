@@ -11,6 +11,7 @@ import torch.optim as optim
 import torch
 import numpy as np
 from sklearn.model_selection import StratifiedKFold
+import pandas as pd 
 
 n_epochs = 3
 batch_size_train = 64
@@ -29,12 +30,11 @@ def get_cm(actual, predictions):
     confusion_matrix = torch.zeros(nb_classes, nb_classes)
     with torch.no_grad():
         
-            actual  = torch.max(actual, 1)[1]
             _, preds = torch.max(predictions, 1)
             for t, p in zip(actual.view(-1), preds.view(-1)):
                     confusion_matrix[t.long(), p.long()] += 1
     
-    return confusion_matrix
+    return confusion_matrix.long()
 
 
 
@@ -73,19 +73,19 @@ criterion = nn.CrossEntropyLoss()
 
 Xtrain = torch.load('input/Xtrain.pt').float()
 Xtest  = torch.load('input/Xtest.pt').float()
-ytrain = torch.load('input/ytrain.pt').float()
-ytest  = torch.load('input/ytest.pt').float()
+ytrain = torch.load('input/ytrain.pt')
+ytest  = torch.load('input/ytest.pt')
 
 indices = np.array(range(Xtrain.shape[0]))
 n_mini_batch = 10 
-for epoch in range(1000):  # loop over the dataset multiple times
+for epoch in range(5000):  # loop over the dataset multiple times
 
     network.train() 
     kf = StratifiedKFold(n_splits=n_mini_batch, shuffle= True)
     kf.get_n_splits(indices)
     
     train_loss = 0.0
-    for i in kf.split(indices, y = torch.max(ytrain, 1)[1]):
+    for i in kf.split(indices, y = ytrain):
         # get the inputs; data is a list of [inputs, labels]
         inputs, labels = Xtrain[i[1]], ytrain[i[1]]
 
@@ -94,7 +94,7 @@ for epoch in range(1000):  # loop over the dataset multiple times
 
         # forward + backward + optimize
         outputs = network(inputs)
-        loss = criterion(outputs, torch.max(labels, 1)[1])
+        loss = criterion(outputs, labels)
         loss.backward()
         optimizer.step()
         train_loss += loss.item()
@@ -103,7 +103,7 @@ for epoch in range(1000):  # loop over the dataset multiple times
     if epoch % 5 == 0:
         with torch.no_grad():
             predictions = network(Xtest)
-            test_loss = criterion(predictions, torch.max(ytest, 1)[1])
+            test_loss = criterion(predictions, ytest)
             train_loss /= n_mini_batch
             
             cm     = get_cm(ytrain, network(Xtrain))
@@ -120,7 +120,8 @@ for epoch in range(1000):  # loop over the dataset multiple times
 print('Finished Training')
 
 #save model
-torch.save({
+if False:
+    torch.save({
             'epoch': epoch,
             'model_state_dict': network.state_dict(),
             'optimizer_state_dict': optimizer.state_dict(),
@@ -129,12 +130,17 @@ torch.save({
     },
     r"src/saved_models/first_attempt.pkl")
 
-#load example
-checkpoint = torch.load(r"src/saved_models/first_attempt.pkl")
-network.load_state_dict(checkpoint['model_state_dict'])
-optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
-epoch = checkpoint['epoch']
-loss = checkpoint['loss']
+    #load example
+    checkpoint = torch.load(r"src/saved_models/first_attempt.pkl")
+    network.load_state_dict(checkpoint['model_state_dict'])
+    optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+    epoch = checkpoint['epoch']
+    loss = checkpoint['loss']
 
+#analyze results
+activity_labels =pd.read_csv("input/LabelMap.csv", index_col=0)
+val_df = pd.DataFrame(val_cm.long().numpy(), 
+                      columns = activity_labels.Activity,
+                      index = activity_labels.Activity)
 
 

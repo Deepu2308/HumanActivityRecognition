@@ -84,20 +84,17 @@ if __name__ == "__main__":
     activity_labels = pd.read_csv(r"input/activity_labels.txt", 
                                   sep = ' ',
                                   index_col=0,
-                                  header=None).iloc[:,0].to_dict()
+                                  header=None)
     
-    ytrain = list( map( lambda x: [activity_labels[x]], ytrain) )
-    ytest  = list( map( lambda x: [activity_labels[x]], ytest) )
+    activity_labels.index = activity_labels.index - 1
+    activity_labels.index.name = 'ID'
+    activity_labels.columns    = ['Activity']
     
-    ohe = OneHotEncoder(sparse=False)
-    ytrain_ohe = ohe.fit_transform(ytrain)
-    ytest_ohe  = ohe.transform(ytest)
-    
+    activity_labels.to_csv("input/LabelMap.csv")        
+
     #save
-    torch.save(torch.tensor(ytrain_ohe),'input/ytrain.pt')
-    torch.save(torch.tensor(ytest_ohe), 'input/ytest.pt')    
-    with open("input/OneHotEncode.pkl", "wb") as f: 
-        pickle.dump(ohe, f)
+    torch.save(torch.tensor(ytrain).type(torch.LongTensor)-1,'input/ytrain.pt')
+    torch.save(torch.tensor(ytest).type(torch.LongTensor)-1, 'input/ytest.pt')    
     
 # =============================================================================
 #     SUBJECTS
