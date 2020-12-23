@@ -142,5 +142,5 @@ activity_labels =pd.read_csv("input/LabelMap.csv", index_col=0)
 val_df = pd.DataFrame(val_cm.long().numpy(), 
                       columns = activity_labels.Activity,
                       index = activity_labels.Activity)
-
+val_df.to_csv('src/ConfusionMatrixTest.csv')
 
