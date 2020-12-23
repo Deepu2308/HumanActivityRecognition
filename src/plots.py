@@ -96,3 +96,24 @@ g.map(sns.lineplot, "time", "value", dashes = True)
 g.add_legend()
 g.fig.suptitle('Sitting vs Standing - Subjects 1,3,26,27', y = 1.02)
 g.savefig('src/plots/standing vs sitting/Subjects 1,3,26,27.png')
+
+
+
+#analyse all activites
+subset = df[df.subject.isin(['1'])]#.drop(['subject'],1)
+#subset = subset[subset.activity.isin(['SITTING','STANDING'])]
+subset = subset.groupby(['subject','measurement','activity']).head(1)
+subset = pd.melt(subset, 
+        id_vars= ['subject','measurement','activity'],
+        value_vars= subset.columns[3:])
+subset.rename(columns = {"variable":'time'}, inplace=True) 
+g = sns.FacetGrid(subset, 
+                  row = 'activity', 
+                  col = 'measurement', 
+                  hue = 'subject', 
+                  margin_titles=True,
+                  despine = False)   
+g.map(sns.lineplot, "time", "value", dashes = True)
+g.add_legend()
+g.fig.suptitle('Sitting vs Standing - Subjects 1,3,26,27', y = 1.02)
+g.savefig('src/plots/Subjects 1.png')
