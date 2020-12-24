@@ -1499,3 +1499,12 @@ root - INFO - Network using Kernel Size: L1:4 L2:4 n_hidden:2048
 root - INFO - GPU available?:      True
 root - INFO - Network using cuda?: True
 root - INFO - Network using Kernel Size: L1:4 L2:4 n_hidden:2048
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - Network using Kernel Size: L1:4 L2:4 n_hidden:2048
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - Network using Kernel Size: L1:4 L2:4 n_hidden:2048
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - Network using Kernel Size: L1:4 L2:4 n_hidden:2048

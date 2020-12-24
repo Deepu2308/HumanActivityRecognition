@@ -10,7 +10,6 @@ import pandas as pd
 import os
 import numpy as np
 import seaborn as sns
-from src.nn import Net
 
 #labels
 ytrain = torch.load('input/ytrain.pt')

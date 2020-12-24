@@ -14,7 +14,7 @@ import pandas as pd
 import logging
 from src.custom_functions import get_cm, HumanActivityDataset, DataLoader
 
-logging.basicConfig(filename='src/logs/nn_log.log',
+logging.basicConfig(filename='src/logs/wanb.log',
                     filemode='a', 
                     format='%(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
