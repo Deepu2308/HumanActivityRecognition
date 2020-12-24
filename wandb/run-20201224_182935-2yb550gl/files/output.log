@@ -1,0 +1,8 @@
+GPU available?:      True
+Network using cuda?: True
+Traceback (most recent call last):
+  File "wanb.py", line 234, in <module>
+    main()
+  File "wanb.py", line 223, in main
+    test_loss.item(),
+AttributeError: 'float' object has no attribute 'item'

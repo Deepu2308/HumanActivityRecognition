@@ -1,0 +1,10 @@
+GPU available?:      True
+Network using cuda?: True
+Epoch : 10 loss : 1.80 test_loss: 1.79 	 acc: 0.00 test_acc: 0.20
+Epoch : 20 loss : 1.80 test_loss: 1.80 	 acc: 0.04 test_acc: 0.20
+Epoch : 30 loss : 1.80 test_loss: 1.79 	 acc: 0.33 test_acc: 0.20
+Epoch : 40 loss : 1.80 test_loss: 1.80 	 acc: 0.17 test_acc: 0.12
+Epoch : 50 loss : 1.80 test_loss: 1.80 	 acc: 0.17 test_acc: 0.16
+Epoch : 60 loss : 1.80 test_loss: 1.79 	 acc: 0.25 test_acc: 0.24
+Epoch : 70 loss : 1.80 test_loss: 1.78 	 acc: 0.12 test_acc: 0.24
+Epoch : 80 loss : 1.80 test_loss: 1.79 	 acc: 0.21 test_acc: 0.12

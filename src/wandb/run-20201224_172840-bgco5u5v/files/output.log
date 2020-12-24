@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "wanb.py", line 21, in <module>
+    logging.basicConfig(filename='src/logs/wanb.log',
+  File "C:\ProgramData\Anaconda3\lib\logging\__init__.py", line 1976, in basicConfig
+    h = FileHandler(filename, mode)
+  File "C:\ProgramData\Anaconda3\lib\logging\__init__.py", line 1143, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "C:\ProgramData\Anaconda3\lib\logging\__init__.py", line 1172, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\deepu\\Desktop\\MyFolders\\Projects\\PetProjects\\ActivityRecognition\\src\\src\\logs\\wanb.log'

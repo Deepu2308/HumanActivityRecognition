@@ -1,0 +1,83 @@
+2020-12-24 18:24:22,030 INFO    MainThread:21016 [wandb_setup.py:_flush():70] setting env: {}
+2020-12-24 18:24:22,031 INFO    MainThread:21016 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2020-12-24 18:24:22,031 INFO    MainThread:21016 [wandb_setup.py:_flush():70] setting login settings: {}
+2020-12-24 18:24:22,031 INFO    MainThread:21016 [wandb_init.py:_log_setup():303] Logging user logs to C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\wandb\run-20201224_182422-ccxtdxuw\logs\debug.log
+2020-12-24 18:24:22,031 INFO    MainThread:21016 [wandb_init.py:_log_setup():304] Logging internal logs to C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\wandb\run-20201224_182422-ccxtdxuw\logs\debug-internal.log
+2020-12-24 18:24:24,346 INFO    MainThread:21016 [wandb_run.py:_console_start():1237] atexit reg
+2020-12-24 18:24:24,347 INFO    MainThread:21016 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.WRAP
+2020-12-24 18:24:24,347 INFO    MainThread:21016 [wandb_run.py:_redirect():1135] Wrapping output streams.
+2020-12-24 18:24:24,347 INFO    MainThread:21016 [wandb_run.py:_redirect():1151] Redirects installed.
+2020-12-24 18:24:24,814 INFO    MainThread:21016 [wandb_config.py:__setitem__():135] config set batch_size = 32 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000028499AEBF70>>
+2020-12-24 18:24:24,815 INFO    MainThread:21016 [wandb_run.py:_config_callback():549] config_cb batch_size 32 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.3', 'is_jupyter_run': False, 'is_kaggle_kernel': False}, 'batch_size': 32}
+2020-12-24 18:24:24,815 INFO    MainThread:21016 [wandb_config.py:__setitem__():135] config set test_batch_size = 50 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000028499AEBF70>>
+2020-12-24 18:24:24,815 INFO    MainThread:21016 [wandb_run.py:_config_callback():549] config_cb test_batch_size 50 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.3', 'is_jupyter_run': False, 'is_kaggle_kernel': False}, 'batch_size': 32, 'test_batch_size': 50}
+2020-12-24 18:24:24,815 INFO    MainThread:21016 [wandb_config.py:__setitem__():135] config set epochs = 500 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000028499AEBF70>>
+2020-12-24 18:24:24,815 INFO    MainThread:21016 [wandb_run.py:_config_callback():549] config_cb epochs 500 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.3', 'is_jupyter_run': False, 'is_kaggle_kernel': False}, 'batch_size': 32, 'test_batch_size': 50, 'epochs': 500}
+2020-12-24 18:24:24,815 INFO    MainThread:21016 [wandb_config.py:__setitem__():135] config set lr = 0.001 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000028499AEBF70>>
+2020-12-24 18:24:24,815 INFO    MainThread:21016 [wandb_run.py:_config_callback():549] config_cb lr 0.001 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.3', 'is_jupyter_run': False, 'is_kaggle_kernel': False}, 'batch_size': 32, 'test_batch_size': 50, 'epochs': 500, 'lr': 0.001}
+2020-12-24 18:24:24,815 INFO    MainThread:21016 [wandb_config.py:__setitem__():135] config set momentum = 0.5 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000028499AEBF70>>
+2020-12-24 18:24:24,816 INFO    MainThread:21016 [wandb_run.py:_config_callback():549] config_cb momentum 0.5 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.3', 'is_jupyter_run': False, 'is_kaggle_kernel': False}, 'batch_size': 32, 'test_batch_size': 50, 'epochs': 500, 'lr': 0.001, 'momentum': 0.5}
+2020-12-24 18:24:24,816 INFO    MainThread:21016 [wandb_config.py:__setitem__():135] config set no_cuda = False - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000028499AEBF70>>
+2020-12-24 18:24:24,816 INFO    MainThread:21016 [wandb_run.py:_config_callback():549] config_cb no_cuda False {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.3', 'is_jupyter_run': False, 'is_kaggle_kernel': False}, 'batch_size': 32, 'test_batch_size': 50, 'epochs': 500, 'lr': 0.001, 'momentum': 0.5, 'no_cuda': False}
+2020-12-24 18:24:24,816 INFO    MainThread:21016 [wandb_config.py:__setitem__():135] config set seed = 42 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000028499AEBF70>>
+2020-12-24 18:24:24,816 INFO    MainThread:21016 [wandb_run.py:_config_callback():549] config_cb seed 42 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.3', 'is_jupyter_run': False, 'is_kaggle_kernel': False}, 'batch_size': 32, 'test_batch_size': 50, 'epochs': 500, 'lr': 0.001, 'momentum': 0.5, 'no_cuda': False, 'seed': 42}
+2020-12-24 18:24:24,817 INFO    MainThread:21016 [wandb_config.py:__setitem__():135] config set log_interval = 10 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000028499AEBF70>>
+2020-12-24 18:24:24,817 INFO    MainThread:21016 [wandb_run.py:_config_callback():549] config_cb log_interval 10 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.3', 'is_jupyter_run': False, 'is_kaggle_kernel': False}, 'batch_size': 32, 'test_batch_size': 50, 'epochs': 500, 'lr': 0.001, 'momentum': 0.5, 'no_cuda': False, 'seed': 42, 'log_interval': 10}
+2020-12-24 18:24:24,817 INFO    MainThread:21016 [wandb_config.py:__setitem__():135] config set kernel_size_1 = 4 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000028499AEBF70>>
+2020-12-24 18:24:24,817 INFO    MainThread:21016 [wandb_run.py:_config_callback():549] config_cb kernel_size_1 4 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.3', 'is_jupyter_run': False, 'is_kaggle_kernel': False}, 'batch_size': 32, 'test_batch_size': 50, 'epochs': 500, 'lr': 0.001, 'momentum': 0.5, 'no_cuda': False, 'seed': 42, 'log_interval': 10, 'kernel_size_1': 4}
+2020-12-24 18:24:24,817 INFO    MainThread:21016 [wandb_config.py:__setitem__():135] config set kernel_size_2 = 4 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000028499AEBF70>>
+2020-12-24 18:24:24,817 INFO    MainThread:21016 [wandb_run.py:_config_callback():549] config_cb kernel_size_2 4 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.3', 'is_jupyter_run': False, 'is_kaggle_kernel': False}, 'batch_size': 32, 'test_batch_size': 50, 'epochs': 500, 'lr': 0.001, 'momentum': 0.5, 'no_cuda': False, 'seed': 42, 'log_interval': 10, 'kernel_size_1': 4, 'kernel_size_2': 4}
+2020-12-24 18:24:24,817 INFO    MainThread:21016 [wandb_config.py:__setitem__():135] config set n_hidden = 256 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x0000028499AEBF70>>
+2020-12-24 18:24:24,818 INFO    MainThread:21016 [wandb_run.py:_config_callback():549] config_cb n_hidden 256 {'_wandb': {'cli_version': '0.10.12', 'python_version': '3.8.3', 'is_jupyter_run': False, 'is_kaggle_kernel': False}, 'batch_size': 32, 'test_batch_size': 50, 'epochs': 500, 'lr': 0.001, 'momentum': 0.5, 'no_cuda': False, 'seed': 42, 'log_interval': 10, 'kernel_size_1': 4, 'kernel_size_2': 4, 'n_hidden': 256}
+2020-12-24 18:24:26,347 INFO    MainThread:21016 [wandb_watch.py:watch():35] Watching
+2020-12-24 18:25:12,344 INFO    MainThread:21016 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 1
+2020-12-24 18:25:12,344 INFO    MainThread:21016 [wandb_run.py:_restore():1179] restore
+2020-12-24 18:25:12,348 INFO    MainThread:21016 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "1ded57f9a7ee47b18ba277da0567a07b"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+      media_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 1890
+      total_bytes: 1890
+    }
+  }
+}
+
+2020-12-24 18:25:14,353 INFO    MainThread:21016 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "e16fb6f22dfa46aca758ca2ac1c10c0b"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 5
+      media_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 32689
+      total_bytes: 32689
+    }
+  }
+}
+
+2020-12-24 18:25:16,356 INFO    MainThread:21016 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "268156f2427a4ae7b68fde60136d0206"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+      media_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 32689
+      total_bytes: 32689
+    }
+  }
+}
+
+2020-12-24 18:25:17,496 INFO    MainThread:21016 [wandb_run.py:_show_summary():1469] rendering summary
+2020-12-24 18:25:17,500 INFO    MainThread:21016 [wandb_run.py:_show_history():1507] rendering history
+2020-12-24 18:25:17,508 INFO    MainThread:21016 [wandb_run.py:_show_files():1536] logging synced files
+2020-12-24 18:25:17,512 INFO    MainThread:21016 [internal.py:handle_exit():138] Internal process exited

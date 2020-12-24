@@ -1,0 +1,19 @@
+GPU available?:      True
+Network using cuda?: True
+Epoch : 10 loss : 412.71 test_loss: 1.79 	 acc: 0.17 test_acc: 0.24
+Epoch : 20 loss : 412.74 test_loss: 1.80 	 acc: 0.17 test_acc: 0.12
+Epoch : 30 loss : 412.66 test_loss: 1.79 	 acc: 0.21 test_acc: 0.18
+Epoch : 40 loss : 412.80 test_loss: 1.79 	 acc: 0.12 test_acc: 0.16
+Epoch : 50 loss : 412.67 test_loss: 1.80 	 acc: 0.12 test_acc: 0.14
+Traceback (most recent call last):
+  File "wanb.py", line 234, in <module>
+    main()
+  File "wanb.py", line 191, in main
+    batch = next(test_gen)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 474, in _next_data
+    index = self._next_index()  # may raise StopIteration
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 427, in _next_index
+    return next(self._sampler_iter)  # may raise StopIteration
+StopIteration

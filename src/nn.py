@@ -149,6 +149,7 @@ if __name__ == '__main__':
     
         # print epoch level statistics
         if epoch % t == 0:
+            network.eval()
             with torch.no_grad():
                 
                 #get test batch
@@ -180,10 +181,11 @@ if __name__ == '__main__':
                 print(msg)
                 if epoch % (t*20) == 0: logging.info(msg)
     
-    #log last epoch results
+    #log last available results
     logging.info(msg)
     
     #log performance on full test set
+    network.eval()
     full_test_cm    = get_cm(test_dataset.y, network(test_dataset.X))   
     full_test_loss  = criterion(predictions, test_batch['labels']).item()
     msg             = 'Finished Training. Test Accuracy : {:.2f} Mean Loss : {:.2f}'.format( 

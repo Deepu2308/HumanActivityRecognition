@@ -1,0 +1,14 @@
+GPU available?:      True
+Network using cuda?: True
+Traceback (most recent call last):
+  File "wanb.py", line 223, in <module>
+    main()
+  File "wanb.py", line 191, in main
+    batch = next(test_gen)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 474, in _next_data
+    index = self._next_index()  # may raise StopIteration
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 427, in _next_index
+    return next(self._sampler_iter)  # may raise StopIteration
+StopIteration
