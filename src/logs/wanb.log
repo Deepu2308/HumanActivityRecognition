@@ -1,0 +1,388 @@
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 50
+batch_size_train = 32
+batch_size_test  = 1000
+learning_rate    = 0.001
+momentum         = 0.5
+
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 50
+batch_size_train = 32
+batch_size_test  = 1000
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 50
+batch_size_train = 32
+batch_size_test  = 1000
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 1500
+batch_size_train = 32
+batch_size_test  = 1000
+learning_rate    = 0.001
+momentum         = 0.5
+
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - Epoch : 0 loss : 1.79 test_loss: 1.79 	 acc: 0.04 test_acc: 0.18
+root - INFO - Epoch : 100 loss : 0.75 test_loss: 0.84 	 acc: 0.71 test_acc: 0.56
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - Epoch : 0 loss : 1.79 test_loss: 1.77 	 acc: 0.12 test_acc: 0.22
+root - INFO - Epoch : 100 loss : 0.60 test_loss: 0.81 	 acc: 0.88 test_acc: 0.58
+root - INFO - Epoch : 200 loss : 0.42 test_loss: 0.69 	 acc: 0.75 test_acc: 0.68
+root - INFO - Epoch : 300 loss : 0.34 test_loss: 0.54 	 acc: 0.79 test_acc: 0.86
+root - INFO - Epoch : 400 loss : 0.27 test_loss: 0.46 	 acc: 0.92 test_acc: 0.74
+root - INFO - Epoch : 500 loss : 0.24 test_loss: 0.62 	 acc: 1.00 test_acc: 0.84
+root - INFO - 
+
+Network Details:
+
+n_epochs         = 500
+batch_size_train = 32
+batch_size_test  = 50
+learning_rate    = 0.001
+momentum         = 0.5
+    
+Kernel Size L1   = 4 
+Kernel Size L2   = 4 
+n_hidden         = 256
+
+
+
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - Epoch : 0 loss : 1.79 test_loss: 1.79 	 acc: 0.17 test_acc: 0.10
+root - INFO - Epoch : 100 loss : 0.72 test_loss: 0.87 	 acc: 0.67 test_acc: 0.62
+root - INFO - Epoch : 200 loss : 0.64 test_loss: 0.69 	 acc: 0.71 test_acc: 0.60
+root - INFO - Epoch : 300 loss : 0.47 test_loss: 0.54 	 acc: 0.67 test_acc: 0.74
+root - INFO - Epoch : 400 loss : 0.27 test_loss: 0.48 	 acc: 0.88 test_acc: 0.80
+root - INFO - Epoch : 500 loss : 0.20 test_loss: 0.54 	 acc: 1.00 test_acc: 0.78
+root - INFO - Finished Training. Test Accuracy : 0.80 Mean Loss : 0.54

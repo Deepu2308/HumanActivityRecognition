@@ -1,0 +1,42 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.12
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.3
+batch_size:
+  desc: null
+  value: 32
+epochs:
+  desc: null
+  value: 50
+kernel_size_1:
+  desc: null
+  value: 4
+kernel_size_2:
+  desc: null
+  value: 4
+log_interval:
+  desc: null
+  value: 10
+lr:
+  desc: null
+  value: 0.001
+momentum:
+  desc: null
+  value: 0.5
+n_hidden:
+  desc: null
+  value: 256
+no_cuda:
+  desc: null
+  value: false
+seed:
+  desc: null
+  value: 42
+test_batch_size:
+  desc: null
+  value: 1000

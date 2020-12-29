@@ -1,3 +1,4 @@
 # data files
 **/input/
 **/src/plots/subject_analysis
+wandb/**

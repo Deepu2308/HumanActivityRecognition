@@ -1,0 +1,190 @@
+2020-12-24 17:31:06,136 INFO    MainThread:6024 [internal.py:wandb_internal():63] W&B internal server running at pid: 6024
+2020-12-24 17:31:06,138 INFO    WriterThread:6024 [datastore.py:open_for_write():76] open: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\run-394a4mmh.wandb
+2020-12-24 17:31:06,139 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: check_version
+2020-12-24 17:31:06,140 DEBUG   SenderThread:6024 [sender.py:send():90] send: header
+2020-12-24 17:31:06,145 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:06,145 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: check_version
+2020-12-24 17:31:06,147 DEBUG   Thread-8  :6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): pypi.org:443
+2020-12-24 17:31:06,293 DEBUG   Thread-8  :6024 [connectionpool.py:_make_request():433] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 52216
+2020-12-24 17:31:06,343 DEBUG   SenderThread:6024 [sender.py:send():90] send: run
+2020-12-24 17:31:06,352 DEBUG   SenderThread:6024 [util.py:is_cygwin_git():315] Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'The system cannot find the file specified', None, 2, None)
+2020-12-24 17:31:06,354 DEBUG   SenderThread:6024 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-24 17:31:06,409 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:06,787 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:06,836 INFO    SenderThread:6024 [dir_watcher.py:__init__():165] watching files in: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files
+2020-12-24 17:31:06,836 INFO    SenderThread:6024 [sender.py:_start_run_threads():487] run started: 394a4mmh with start time 1608811264
+2020-12-24 17:31:06,837 DEBUG   SenderThread:6024 [sender.py:send():90] send: summary
+2020-12-24 17:31:06,837 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: run_start
+2020-12-24 17:31:06,838 INFO    SenderThread:6024 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-24 17:31:06,858 DEBUG   HandlerThread:6024 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-12-24 17:31:06,901 DEBUG   HandlerThread:6024 [cmd.py:execute():718] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition, universal_newlines=False, shell=None, istream=None)
+2020-12-24 17:31:07,095 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: status
+2020-12-24 17:31:07,095 DEBUG   SenderThread:6024 [sender.py:send():90] send: files
+2020-12-24 17:31:07,096 INFO    SenderThread:6024 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2020-12-24 17:31:07,097 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:07,097 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: status
+2020-12-24 17:31:07,099 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:07,113 DEBUG   Thread-17 :6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:07,435 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:07,459 DEBUG   Thread-17 :6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:07,465 DEBUG   Thread-17 :6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-24 17:31:07,672 DEBUG   SenderThread:6024 [sender.py:send():90] send: config
+2020-12-24 17:31:07,679 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:07,840 INFO    Thread-12 :6024 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\wandb-metadata.json
+2020-12-24 17:31:07,840 INFO    Thread-12 :6024 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\output.log
+2020-12-24 17:31:07,840 INFO    Thread-12 :6024 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\wandb-summary.json
+2020-12-24 17:31:07,841 INFO    Thread-12 :6024 [dir_watcher.py:_on_file_created():213] file/dir created: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\requirements.txt
+2020-12-24 17:31:08,014 DEBUG   Thread-17 :6024 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/deepu2308/pytorch-HumanActivity/394a4mmh/wandb-metadata.json?Expires=1608897666&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=d3tTxHgdy1gfrokG%2Fgbx40dtYNXz1t5jPRhse%2BWiZbrCDkzZC8gfUWRGFZr9ePHOe71WJnN1uxZAFt83Ekh3hXp4Zxkn0EE3bQ4yAeO%2FSUud5xbosiRlzGERYutD2xoQCgoomIZbLyYMjp0mlaZbgvQxE4%2FWqBaGKxoK0rv6Y4gIGOOeFiztfsYaY48I50Tx1TNq7BIW0G8wwB3r77sFZXBQaSjH12vFazbwJHiykXu7so8VpstMiv5I6HDsrKIgoiv8GGVt4bzB3EY9hUSZ5siCRfc624y5ckgurwF%2BtzGL3HQ6k2FK1t%2BICrEx7wg7trO6NQMdAGWYD%2FgjNop%2FMg%3D%3D HTTP/1.1" 200 0
+2020-12-24 17:31:08,017 INFO    Thread-17 :6024 [upload_job.py:push():131] Uploaded file C:\Users\deepu\AppData\Local\Temp\tmpc4uz9qoiwandb\nmj57wjr-wandb-metadata.json
+2020-12-24 17:31:08,062 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:08,068 DEBUG   SenderThread:6024 [sender.py:send():90] send: config
+2020-12-24 17:31:08,072 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:08,442 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:08,448 DEBUG   SenderThread:6024 [sender.py:send():90] send: config
+2020-12-24 17:31:08,452 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:08,839 DEBUG   Thread-9  :6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:08,840 INFO    Thread-12 :6024 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\config.yaml
+2020-12-24 17:31:08,955 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:08,960 DEBUG   SenderThread:6024 [sender.py:send():90] send: config
+2020-12-24 17:31:08,964 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:09,306 DEBUG   Thread-9  :6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /files/deepu2308/pytorch-HumanActivity/394a4mmh/file_stream HTTP/1.1" 200 None
+2020-12-24 17:31:09,358 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:09,366 DEBUG   SenderThread:6024 [sender.py:send():90] send: config
+2020-12-24 17:31:09,371 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:09,713 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:09,718 DEBUG   SenderThread:6024 [sender.py:send():90] send: config
+2020-12-24 17:31:09,723 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:09,841 INFO    Thread-12 :6024 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\config.yaml
+2020-12-24 17:31:10,027 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: poll_exit
+2020-12-24 17:31:10,077 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:10,082 DEBUG   SenderThread:6024 [sender.py:send():90] send: config
+2020-12-24 17:31:10,086 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:10,452 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:10,458 DEBUG   SenderThread:6024 [sender.py:send():90] send: config
+2020-12-24 17:31:10,462 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:10,829 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:10,834 DEBUG   SenderThread:6024 [sender.py:send():90] send: config
+2020-12-24 17:31:10,838 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:10,841 INFO    Thread-12 :6024 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\output.log
+2020-12-24 17:31:10,842 INFO    Thread-12 :6024 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\config.yaml
+2020-12-24 17:31:11,198 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:11,204 DEBUG   SenderThread:6024 [sender.py:send():90] send: config
+2020-12-24 17:31:11,208 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:11,579 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:11,585 DEBUG   SenderThread:6024 [sender.py:send():90] send: config
+2020-12-24 17:31:11,588 DEBUG   SenderThread:6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:11,843 INFO    Thread-12 :6024 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\config.yaml
+2020-12-24 17:31:11,958 DEBUG   SenderThread:6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:11,964 DEBUG   SenderThread:6024 [sender.py:send():90] send: exit
+2020-12-24 17:31:11,964 INFO    SenderThread:6024 [sender.py:send_exit():168] handling exit code: 0
+2020-12-24 17:31:11,964 INFO    SenderThread:6024 [sender.py:send_exit():176] send defer
+2020-12-24 17:31:11,964 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:11,964 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: poll_exit
+2020-12-24 17:31:11,965 DEBUG   SenderThread:6024 [sender.py:send():90] send: stats
+2020-12-24 17:31:11,966 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: defer
+2020-12-24 17:31:11,966 INFO    HandlerThread:6024 [handler.py:handle_request_defer():69] handle defer: 0
+2020-12-24 17:31:11,967 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:11,967 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: defer
+2020-12-24 17:31:11,967 INFO    SenderThread:6024 [sender.py:send_request_defer():185] handle sender defer: 0
+2020-12-24 17:31:11,967 INFO    SenderThread:6024 [sender.py:send_request_defer():221] send defer: 1
+2020-12-24 17:31:11,968 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: defer
+2020-12-24 17:31:11,968 INFO    HandlerThread:6024 [handler.py:handle_request_defer():69] handle defer: 1
+2020-12-24 17:31:12,040 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:12,040 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: defer
+2020-12-24 17:31:12,040 INFO    SenderThread:6024 [sender.py:send_request_defer():185] handle sender defer: 1
+2020-12-24 17:31:12,040 INFO    SenderThread:6024 [sender.py:send_request_defer():221] send defer: 2
+2020-12-24 17:31:12,041 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: defer
+2020-12-24 17:31:12,041 DEBUG   SenderThread:6024 [sender.py:send():90] send: stats
+2020-12-24 17:31:12,041 INFO    HandlerThread:6024 [handler.py:handle_request_defer():69] handle defer: 2
+2020-12-24 17:31:12,042 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:12,042 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: defer
+2020-12-24 17:31:12,042 INFO    SenderThread:6024 [sender.py:send_request_defer():185] handle sender defer: 2
+2020-12-24 17:31:12,042 INFO    SenderThread:6024 [sender.py:send_request_defer():221] send defer: 3
+2020-12-24 17:31:12,042 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: defer
+2020-12-24 17:31:12,042 INFO    HandlerThread:6024 [handler.py:handle_request_defer():69] handle defer: 3
+2020-12-24 17:31:12,042 DEBUG   SenderThread:6024 [sender.py:send():90] send: summary
+2020-12-24 17:31:12,043 INFO    SenderThread:6024 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-12-24 17:31:12,044 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:12,044 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: defer
+2020-12-24 17:31:12,044 INFO    SenderThread:6024 [sender.py:send_request_defer():185] handle sender defer: 3
+2020-12-24 17:31:12,044 INFO    SenderThread:6024 [sender.py:send_request_defer():221] send defer: 4
+2020-12-24 17:31:12,044 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: defer
+2020-12-24 17:31:12,044 INFO    HandlerThread:6024 [handler.py:handle_request_defer():69] handle defer: 4
+2020-12-24 17:31:12,044 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:12,044 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: defer
+2020-12-24 17:31:12,044 INFO    SenderThread:6024 [sender.py:send_request_defer():185] handle sender defer: 4
+2020-12-24 17:31:12,044 INFO    SenderThread:6024 [dir_watcher.py:finish():279] shutting down directory watcher
+2020-12-24 17:31:12,270 DEBUG   Thread-9  :6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /files/deepu2308/pytorch-HumanActivity/394a4mmh/file_stream HTTP/1.1" 200 None
+2020-12-24 17:31:12,845 INFO    SenderThread:6024 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\config.yaml
+2020-12-24 17:31:12,845 INFO    SenderThread:6024 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\wandb-summary.json
+2020-12-24 17:31:12,845 INFO    SenderThread:6024 [dir_watcher.py:finish():309] scan: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files
+2020-12-24 17:31:12,846 INFO    SenderThread:6024 [dir_watcher.py:finish():315] scan save: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\config.yaml config.yaml
+2020-12-24 17:31:12,846 INFO    SenderThread:6024 [dir_watcher.py:finish():315] scan save: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\output.log output.log
+2020-12-24 17:31:12,846 INFO    SenderThread:6024 [dir_watcher.py:finish():315] scan save: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\requirements.txt requirements.txt
+2020-12-24 17:31:12,852 INFO    SenderThread:6024 [dir_watcher.py:finish():315] scan save: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\wandb-metadata.json wandb-metadata.json
+2020-12-24 17:31:12,852 INFO    SenderThread:6024 [dir_watcher.py:finish():315] scan save: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\wandb-summary.json wandb-summary.json
+2020-12-24 17:31:12,853 DEBUG   Thread-19 :6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:12,853 DEBUG   Thread-18 :6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:12,856 DEBUG   Thread-20 :6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:12,857 INFO    SenderThread:6024 [sender.py:send_request_defer():221] send defer: 5
+2020-12-24 17:31:12,860 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: defer
+2020-12-24 17:31:12,860 INFO    HandlerThread:6024 [handler.py:handle_request_defer():69] handle defer: 5
+2020-12-24 17:31:12,861 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:12,861 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: defer
+2020-12-24 17:31:12,861 INFO    SenderThread:6024 [sender.py:send_request_defer():185] handle sender defer: 5
+2020-12-24 17:31:12,861 DEBUG   Thread-21 :6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-12-24 17:31:12,861 INFO    SenderThread:6024 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-24 17:31:12,862 INFO    SenderThread:6024 [sender.py:send_request_defer():221] send defer: 6
+2020-12-24 17:31:12,862 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: defer
+2020-12-24 17:31:12,863 INFO    HandlerThread:6024 [handler.py:handle_request_defer():69] handle defer: 6
+2020-12-24 17:31:12,863 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:12,863 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: defer
+2020-12-24 17:31:12,863 INFO    SenderThread:6024 [sender.py:send_request_defer():185] handle sender defer: 6
+2020-12-24 17:31:13,161 DEBUG   Thread-9  :6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /files/deepu2308/pytorch-HumanActivity/394a4mmh/file_stream HTTP/1.1" 200 None
+2020-12-24 17:31:13,196 DEBUG   Thread-18 :6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:13,202 DEBUG   Thread-20 :6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:13,205 DEBUG   Thread-19 :6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:13,213 DEBUG   Thread-20 :6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-24 17:31:13,213 DEBUG   Thread-19 :6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-24 17:31:13,213 DEBUG   Thread-18 :6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-24 17:31:13,223 DEBUG   Thread-21 :6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-12-24 17:31:13,228 DEBUG   Thread-21 :6024 [connectionpool.py:_new_conn():937] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-12-24 17:31:13,431 DEBUG   Thread-9  :6024 [connectionpool.py:_make_request():433] https://api.wandb.ai:443 "POST /files/deepu2308/pytorch-HumanActivity/394a4mmh/file_stream HTTP/1.1" 200 None
+2020-12-24 17:31:13,435 INFO    SenderThread:6024 [sender.py:send_request_defer():221] send defer: 7
+2020-12-24 17:31:13,436 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: defer
+2020-12-24 17:31:13,436 INFO    HandlerThread:6024 [handler.py:handle_request_defer():69] handle defer: 7
+2020-12-24 17:31:13,436 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:13,436 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: defer
+2020-12-24 17:31:13,436 INFO    SenderThread:6024 [sender.py:send_request_defer():185] handle sender defer: 7
+2020-12-24 17:31:13,436 INFO    SenderThread:6024 [sender.py:send_request_defer():221] send defer: 8
+2020-12-24 17:31:13,437 DEBUG   SenderThread:6024 [sender.py:send():90] send: final
+2020-12-24 17:31:13,437 DEBUG   SenderThread:6024 [sender.py:send():90] send: footer
+2020-12-24 17:31:13,437 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: defer
+2020-12-24 17:31:13,437 INFO    HandlerThread:6024 [handler.py:handle_request_defer():69] handle defer: 8
+2020-12-24 17:31:13,437 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:13,437 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: defer
+2020-12-24 17:31:13,437 INFO    SenderThread:6024 [sender.py:send_request_defer():185] handle sender defer: 8
+2020-12-24 17:31:13,764 DEBUG   Thread-20 :6024 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/deepu2308/pytorch-HumanActivity/394a4mmh/requirements.txt?Expires=1608897672&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=IEJGcqkoXzqlHdwZm2lQo3nM1H8c4PPdeY5D%2FleA1DBTBgxUixPZvo5Qq2FruywsmavVw5HDNL66mHOi8mfx5%2F7P7W1qMWM89SO%2FrnWCtk1nUwxTQLaznPxvWlqtUJ2zQ8aylkjus3Z6v%2B94ewrx2y6hINf%2Bo2PcdPZaqY9%2FRpc%2B0cIleRN9ceo3yEBpy8Mu31YkMMibWJ236ss6HzL7ExycNzn5xiPk%2FIDO%2BuI0V8sSyt1GTqzNXij6tgf2n0WwrBoGC0UQdo8HjUFeHkfGa4GRGBtt9QTZf6XRFmHqsND3aNmyCCKtIB6bQOiCL5spE2QLbvzHDsEAgEmWyWfksA%3D%3D HTTP/1.1" 200 0
+2020-12-24 17:31:13,766 INFO    Thread-20 :6024 [upload_job.py:push():131] Uploaded file C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\requirements.txt
+2020-12-24 17:31:13,769 DEBUG   Thread-21 :6024 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/deepu2308/pytorch-HumanActivity/394a4mmh/wandb-summary.json?Expires=1608897672&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=tDE3lteK8OjgNCDCY6lCpElQ2N6ZLC%2BYSMXHsxEpeuK%2B3QSNXRmciPhuFDEcIZc593IutklWkCcpxOMz5vxdm27n%2FKhqS5ii8mIJ%2Fgs%2BBHFY%2BvZsi4B8%2Bl3n3aKhLn5K3JuC%2FWLw9hHrWb234rEpd0K2qFaYB3ZvQuSQGfjvpH%2FpZ8RQ239KCfaKk2lnSGhsEpuEsCNYgcapPQTi15n0aZFps%2BTf%2B8GPHL3Ud%2BFWRbsIYGxl0gfH%2FoeocZIX2kHJ5%2BoimafY1ZvlVL%2BtB0ydZhP5H2iKZvVefh7iosiRvAf8mQI43ZXwQqKxiENbLmYvnZmIOsp%2Bt7BUh2Kogp1DGw%3D%3D HTTP/1.1" 200 0
+2020-12-24 17:31:13,771 INFO    Thread-21 :6024 [upload_job.py:push():131] Uploaded file C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\wandb-summary.json
+2020-12-24 17:31:13,773 DEBUG   Thread-18 :6024 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/deepu2308/pytorch-HumanActivity/394a4mmh/config.yaml?Expires=1608897672&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=qkPb%2FOCtwdsoMEofGC7I2uXgknYPhdHGyjPI7OUvkdrbFNZj9a8aqpISN80g7z7Bj%2B93IcVW01h6rLV%2BZA%2Brg0PS6wEaLOphdHqqQT5gJmbZr7fyT6gA3eRX8Cp%2BJC4N4%2FicqPHEc6BHoE5Axgj6AtjKrCuVTwpoTN8Fh12z%2Ffjxguz0GkkV2HMNYs1hZzB9L2SPIWRMDJ5sGvX5A9Td57ZrbZNy2cD7NGFuIoLDMNx%2FOEwfxY%2FjSqBi5Y1iE2l7vzdRXqNc7RXMJzHVqAIccfxy%2BR3XedvUXxyI2JBwGDrTVN2eF634ed5Xj%2FpfGOO4JpFHYvWSU1ma%2FkknfKBTDA%3D%3D HTTP/1.1" 200 0
+2020-12-24 17:31:13,775 INFO    Thread-18 :6024 [upload_job.py:push():131] Uploaded file C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\config.yaml
+2020-12-24 17:31:13,805 DEBUG   Thread-19 :6024 [connectionpool.py:_make_request():433] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/deepu2308/pytorch-HumanActivity/394a4mmh/output.log?Expires=1608897672&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=uwpCo6syNIoyazLtYq49e9sw8SvBRlZQTcFNsYNNhWZYAY3texpl%2FJpiF7t4jFClmitfhLETWaiZg4jnbMPWPTo%2FSsEk0gPOocG%2FuPdzaerbFlNNjiXnCPMoJfolPyXwe8V5E6weJucaEIhx6p0tfsdS2eGbO6kjXhrzJDjR4fdOO8fdml43cTIi8dNmg9L1MLxIsRAn6FdD8pkVfU9slCmyvTjOj6BUoskSKy6L5nFgRn4BbEStp092H9aQ4QKSwI%2FMjvJ%2FX846upoqqmClh99ATn7LdcR3B%2BBSUmwWIIT5SR%2FIB9AVJfggYZjrN9aKnm0D%2Bhxbwm6eondlbHLNwA%3D%3D HTTP/1.1" 200 0
+2020-12-24 17:31:13,807 INFO    Thread-19 :6024 [upload_job.py:push():131] Uploaded file C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\files\output.log
+2020-12-24 17:31:13,969 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: poll_exit
+2020-12-24 17:31:13,969 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:13,969 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: poll_exit
+2020-12-24 17:31:15,971 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: poll_exit
+2020-12-24 17:31:15,971 DEBUG   SenderThread:6024 [sender.py:send():90] send: request
+2020-12-24 17:31:15,972 DEBUG   SenderThread:6024 [sender.py:send_request():99] send_request: poll_exit
+2020-12-24 17:31:15,972 INFO    SenderThread:6024 [file_pusher.py:join():174] waiting for file pusher
+2020-12-24 17:31:15,974 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: get_summary
+2020-12-24 17:31:15,975 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: sampled_history
+2020-12-24 17:31:15,976 DEBUG   HandlerThread:6024 [handler.py:handle_request():55] handle_request: shutdown
+2020-12-24 17:31:15,976 INFO    HandlerThread:6024 [handler.py:finish():271] shutting down handler
+2020-12-24 17:31:16,438 INFO    WriterThread:6024 [datastore.py:close():257] close: C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\wandb\run-20201224_173104-394a4mmh\run-394a4mmh.wandb
+2020-12-24 17:31:16,973 INFO    SenderThread:6024 [sender.py:finish():642] shutting down sender
+2020-12-24 17:31:16,973 INFO    SenderThread:6024 [file_pusher.py:finish():169] shutting down file pusher
+2020-12-24 17:31:16,973 INFO    SenderThread:6024 [file_pusher.py:join():174] waiting for file pusher
+2020-12-24 17:31:16,975 INFO    MainThread:6024 [internal.py:handle_exit():138] Internal process exited

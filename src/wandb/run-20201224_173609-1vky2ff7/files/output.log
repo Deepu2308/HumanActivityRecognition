@@ -1,0 +1,16 @@
+GPU available?:      True
+Network using cuda?: True
+Traceback (most recent call last):
+  File "wanb.py", line 230, in <module>
+    main()
+  File "wanb.py", line 196, in main
+    train_dataset = HumanActivityDataset(file = 'train')
+  File "C:\Users\deepu\Desktop\MyFolders\Projects\PetProjects\ActivityRecognition\src\custom_functions.py", line 35, in __init__
+    self.X = torch.load(root_dir + f'X{file}.pt').float().cuda()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\serialization.py", line 581, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\torch\serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'input/Xtrain.pt'
