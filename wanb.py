@@ -249,7 +249,7 @@ if __name__ == '__main__':
     test_df = pd.DataFrame(full_test_cm.long().numpy(), 
                           columns = activity_labels.Activity,
                           index = activity_labels.Activity)
-    test_df.to_csv('src/ConfusionMatrixTest.csv')
+    #@test_df.to_csv('src/ConfusionMatrixTest.csv')
     
 
 
