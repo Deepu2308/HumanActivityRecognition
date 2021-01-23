@@ -7,9 +7,8 @@ Created on Thu Dec 24 03:41:46 2020
 import torch
 from torch.utils.data import Dataset, DataLoader
 
-def get_cm(actual, predictions):
-    nb_classes = 6
-    
+def get_cm(actual, predictions,nb_classes = 6):
+        
     confusion_matrix = torch.zeros(nb_classes, nb_classes)
     with torch.no_grad():
         

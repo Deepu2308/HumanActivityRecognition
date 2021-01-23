@@ -219,19 +219,3 @@ if __name__ == '__main__':
                           columns = activity_labels.Activity,
                           index = activity_labels.Activity)
     test_df.to_csv('src/ConfusionMatrixTest.csv')
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
