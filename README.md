@@ -14,3 +14,9 @@ https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartph
 |       SITTING      |    0    |         4        |          0         |   258   |    229   |    0   |
 |      STANDING      |    0    |        13        |          0         |    22   |    497   |    0   |
 |       LAYING       |    0    |         0        |          0         |    0    |     0    |   537  |
+
+## What the data looks like
+![Result](src/plots/Subjects%201,3,26,27.png)
+
+## Whats the convolution output looks like
+![Result](src/plot//../plots/Subjects%201.png)
