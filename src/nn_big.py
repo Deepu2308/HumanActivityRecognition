@@ -22,7 +22,9 @@ logging.basicConfig(filename='src/logs/nn_log.log',
                     format='%(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 
-
+# =============================================================================
+# SET TRAINING PARAMETER
+# =============================================================================
 n_epochs = 1500
 batch_size_train = 32
 batch_size_test  = 1000
@@ -47,23 +49,18 @@ print(using_cuda)
 logging.info("\n\n------------------------------------------------------")
 logging.info(gpu_available)
 logging.info(using_cuda)
-# =============================================================================
-# 
-# logging.info(\
-# f"""\n\nNetwork Details:
-# 
-# n_epochs         = {n_epochs}
-# batch_size_train = {batch_size_train}
-# batch_size_test  = {batch_size_test}
-# learning_rate    = {learning_rate}
-# momentum         = {momentum}
-#     
-# Kernel Size L1   = {network.kernel_size_1} 
-# Kernel Size L2   = {network.kernel_size_2} 
-# n_hidden         = {network.n_hidden}
-# \n\n"""
-# )
-# =============================================================================
+
+logging.info(\
+f"""\n\nNetwork Details:
+
+n_epochs         = {n_epochs}
+batch_size_train = {batch_size_train}
+batch_size_test  = {batch_size_test}
+learning_rate    = {learning_rate}
+momentum         = {momentum}
+
+\n\n"""
+)
 
 optimizer = optim.SGD(network.parameters(), 
                       lr=learning_rate,
