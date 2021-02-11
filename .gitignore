@@ -2,3 +2,5 @@
 **/input/
 **/src/plots/subject_analysis
 wandb/**
+archive/**
+/src/logs/archive/**
