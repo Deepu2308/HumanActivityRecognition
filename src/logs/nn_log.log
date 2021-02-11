@@ -1,0 +1,28 @@
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - Epoch : 0 loss : 0.50287 test_loss: 0.55277 	 acc: 0.875 test_acc: 0.818
+root - INFO - 
+
+------------------------------------------------------
+root - INFO - GPU available?:      True
+root - INFO - Network using cuda?: True
+root - INFO - Epoch : 0 loss : 0.50284 test_loss: 0.57179 	 acc: 0.875 test_acc: 0.806
+root - INFO - Epoch : 100 loss : 0.06023 test_loss: 0.58736 	 acc: 1.000 test_acc: 0.791
+root - INFO - Epoch : 200 loss : 0.02369 test_loss: 0.24745 	 acc: 1.000 test_acc: 0.922
+root - INFO - Epoch : 300 loss : 0.02082 test_loss: 0.13622 	 acc: 1.000 test_acc: 0.954
+root - INFO - Epoch : 400 loss : 0.01806 test_loss: 0.18329 	 acc: 1.000 test_acc: 0.949
+root - INFO - Epoch : 500 loss : 0.01429 test_loss: 0.12874 	 acc: 1.000 test_acc: 0.961
+root - INFO - Epoch : 600 loss : 0.00756 test_loss: 0.15301 	 acc: 1.000 test_acc: 0.957
+root - INFO - Epoch : 700 loss : 0.01731 test_loss: 0.12959 	 acc: 1.000 test_acc: 0.957
+root - INFO - Epoch : 800 loss : 0.01376 test_loss: 0.16610 	 acc: 1.000 test_acc: 0.956
+root - INFO - Epoch : 900 loss : 0.01921 test_loss: 0.12120 	 acc: 1.000 test_acc: 0.965
+root - INFO - Epoch : 1000 loss : 0.00713 test_loss: 0.20682 	 acc: 1.000 test_acc: 0.956
+root - INFO - Epoch : 1100 loss : 0.01094 test_loss: 0.17464 	 acc: 1.000 test_acc: 0.958
+root - INFO - Epoch : 1200 loss : 0.00816 test_loss: 0.18835 	 acc: 1.000 test_acc: 0.950
+root - INFO - Epoch : 1300 loss : 0.01261 test_loss: 0.16263 	 acc: 1.000 test_acc: 0.957
+root - INFO - Epoch : 1400 loss : 0.01529 test_loss: 0.15163 	 acc: 1.000 test_acc: 0.958
+root - INFO - Epoch : 1495 loss : 0.02957 test_loss: 0.15030 	 acc: 1.000 test_acc: 0.960
+root - INFO - Finished Training. Test Accuracy : 0.95 Mean Loss : 57.97
