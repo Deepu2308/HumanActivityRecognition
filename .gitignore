@@ -4,3 +4,4 @@
 wandb/**
 archive/**
 /src/logs/archive/**
+/src/archives/**
