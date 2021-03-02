@@ -25,11 +25,12 @@ logging.basicConfig(filename='src/logs/nn_log.log',
 # =============================================================================
 # SET TRAINING PARAMETER
 # =============================================================================
-n_epochs = 1500
+n_epochs = 5000
 batch_size_train = 32
 batch_size_test  = 1000
-learning_rate = 0.001
+learning_rate = 0.01
 momentum = 0.5
+weight_decay = .001
 
 random_seed = 1
 torch.backends.cudnn.enabled = True
@@ -58,14 +59,19 @@ batch_size_train = {batch_size_train}
 batch_size_test  = {batch_size_test}
 learning_rate    = {learning_rate}
 momentum         = {momentum}
+weight_decay     = {weight_decay}
+Optimizer        = SGD
 
 \n\n"""
 )
+logging.info(f'{network} \n\n')
 
 optimizer = optim.SGD(network.parameters(), 
                       lr=learning_rate,
                       momentum=momentum,
-                      weight_decay=0.01,)
+                      weight_decay=weight_decay)
+
+scheduler = optim.lr_scheduler.StepLR(optimizer, step_size = 200, gamma=0.5, last_epoch=-1, verbose=False)
 criterion = nn.CrossEntropyLoss()
 
 if __name__ == '__main__':
@@ -110,8 +116,12 @@ if __name__ == '__main__':
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()
+            
             train_loss += loss.item()
-    
+
+        #decay learning rate every 100 epochs            
+        scheduler.step()
+
         # print epoch level statistics
         if epoch % t == 0:
             network.eval()
@@ -132,14 +142,15 @@ if __name__ == '__main__':
                 train_loss /= (i_batch+1)
                 
                 #create confusion matrix
-                cm      = get_cm(labels, outputs)
-                test_cm = get_cm(test_batch['labels'], predictions)
+                cm       = get_cm(labels, outputs)
+                test_cm  = get_cm(test_batch['labels'], predictions)
+                test_acc = cm.diag().sum() / cm.sum()
                 
                 #display message every t steps and log every 10t steps
                 msg = "Epoch : {} loss : {:.5f} test_loss: {:.5f} \t acc: {:.3f} test_acc: {:.3f}".format(epoch,
                        train_loss,
                        test_loss.item(),
-                       cm.diag().sum() / cm.sum(),
+                       test_acc,
                        test_cm.diag().sum() / test_cm.sum()
                        )
                 
@@ -202,4 +213,4 @@ if __name__ == '__main__':
     test_df = pd.DataFrame(full_test_cm.long().numpy(), 
                           columns = activity_labels.Activity,
                           index = activity_labels.Activity)
-    test_df.to_csv('src/ConfusionMatrixTest_big.csv')
+    test_df.to_csv('src/ConfusionMatrixTest__lr_scheduler.csv')

@@ -6,7 +6,7 @@ Created on Wed Feb 10 08:42:10 2021
 """
 
 import torch.nn as nn
-
+import torch
 
 
 class CNN(nn.Module):
@@ -82,8 +82,19 @@ class CNN(nn.Module):
             nn.ReLU(),
             nn.Dropout(DROPOUT))
         # 1 x 512 
-        self.fc = nn.Linear(11264, 50)
-        self.final_layer = nn.Linear(50, 6)
+        self.fc1 = nn.Sequential(nn.Linear(11264, 4096),
+            nn.ReLU(),
+            nn.Dropout(DROPOUT))
+        self.fc2 = nn.Sequential(nn.Linear(4096, 2048),
+            nn.ReLU(),
+            nn.Dropout(DROPOUT))
+        self.fc3 = nn.Sequential(nn.Linear(2048, 1024),
+            nn.ReLU(),
+            nn.Dropout(DROPOUT))
+        self.fc4 = nn.Sequential(nn.Linear(1024, 512),
+            nn.ReLU(),
+            nn.Dropout(DROPOUT))
+        self.final_layer = nn.Linear(512, 6)
     def forward(self, x):
         # input x : 23 x 59049 x 1
         # expected conv1d input : minibatch_size x num_channel x width
@@ -105,7 +116,11 @@ class CNN(nn.Module):
         
         #print(out.shape)
         #print(x.shape)
-        out = out.view(x.shape[0],-1)
+        #out = out.view(x.shape[0],-1)
+        out = torch.flatten(out,start_dim=1,end_dim=-1)
         #print(out.shape)
-        out = self.fc(out)
+        out = self.fc1(out)
+        out = self.fc2(out)
+        out = self.fc3(out)
+        out = self.fc4(out)
         return self.final_layer(out)

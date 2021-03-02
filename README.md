@@ -18,5 +18,5 @@ https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartph
 ## What the data looks like
 ![Result](src/plots/Subjects%201,3,26,27.png)
 
-## Whats the 1st layer convolution output looks like
+## What the 1st layer convolution output looks like
 ![Result](src/plot//../plots/Subjects%201.png)
